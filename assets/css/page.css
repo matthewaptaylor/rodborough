@@ -1,0 +1,230 @@
+.header{
+	display: block;
+	width: 100%;
+	z-index: 16;
+	background-color: rgba(52, 58, 64, 1);
+}
+.navbar{
+	z-index: 16;
+}
+#firstBrand img{
+	height: 28px;
+}
+#secondBrand img{
+	height: 28px;
+}
+#firstBrand{
+	display: none;
+}
+#secondBrand{
+	display: none;
+}
+@media (max-width: 767px){
+	#secondBrand{
+		display: inline;
+	}
+	.logo{
+		display: none;
+	}
+	.header{
+		height: 56px;
+	}
+	.navbar{
+		background-color: rgba(52, 58, 64, 0.96);
+		position:fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+}
+@media (min-width: 768px){
+	.logo{
+		display: block;
+	}
+	.navbar{
+		background-color: rgba(52, 58, 64, 1);
+	}
+	.navBrandShow #firstBrand{
+		display: inline;
+		overflow: hidden;
+		width: initial;
+		margin-right: 1rem;
+		animation-name: navBrandHide;
+		animation-duration: 0.1s;
+		margin: 0;
+		width: 0;
+	}
+	@keyframes navBrandHide{
+		0%{width:27px;}
+		5%{width:25.6px;}
+		10%{width:24.2px;}
+		15%{width:22.8px;}
+		20%{width:21.4px;}
+		25%{width:20px;}
+		30%{width:18.6px;}
+		35%{width:17.2px;}
+		40%{width:15.8px;}
+		45%{width:14.4px;}
+		50%{width:13px;}
+		55%{width:11.6px;}
+		60%{width:10.2px;}
+		65%{width:8.8px;}
+		70%{width:7.4px;}
+		75%{width:6px;}
+		80%{width:5.6px;}
+		85%{width:4.2px;}
+		90%{width:2.8px;}
+		95%{width:1.4px;}
+		100%{width:0;}
+	}
+	.stickyNav #firstBrand{
+		display: inline;
+		margin: 0;
+		width: 0;
+		overflow: hidden;
+		animation-name: navBrandShow;
+		animation-duration: 0.1s;
+		width: initial;
+		margin-right: 1rem;
+	}
+	@keyframes navBrandShow{
+		0%{width:0;}
+		5%{width:1.4px;}
+		10%{width:2.8px;}
+		15%{width:4.2px;}
+		20%{width:5.6px;}
+		25%{width:6px;}
+		30%{width:7.4px;}
+		35%{width:8.8px;}
+		40%{width:10.2px;}
+		45%{width:11.6px;}
+		50%{width:13px;}
+		55%{width:14.4px;}
+		60%{width:15.8px;}
+		65%{width:17.2px;}
+		70%{width:18.6px;}
+		75%{width:20px;}
+		80%{width:21.4px;}
+		85%{width:22.8px;}
+		90%{width:24.2px;}
+		95%{width:25.6px;}
+		100%{width:27px;}
+	}
+	.stickyLogo{
+		margin-bottom: 0;
+		background-color: rgba(52, 58, 64, 0.96);
+		border-bottom: 56px solid rgba(52, 58, 64, 1);
+	}
+	.stickyNav{
+		position:fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: rgba(52, 58, 64, 0.96);
+	}
+}
+.heads{
+}
+.heads div{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: -6px;
+}
+.head1{
+	display: inline-block;
+	height: 250px;
+}
+.head2{
+	display: none;
+	height: 250px;
+	margin-left: -5px;
+}
+.head3{
+	display: none;
+	height: 250px;
+	margin-left: -5px;
+}
+.head4{
+	display: none;
+	height: 250px;
+	margin-left: -5px;
+}
+.head5{
+	display: none;
+	height: 250px;
+	margin-left: -5px;
+}
+.head6{
+	display: none;
+	height: 250px;
+	margin-left: -5px;
+}
+@media (max-width: 575px){
+	.head1{
+		width: 100vw;
+	}
+}
+@media (min-width: 576px){
+	.head1{
+		width: 50%;
+	}
+	.head2{
+		display: inline-block;
+		width: 50%;
+	}
+}
+@media (min-width: 768px){
+	.head1{
+		width: 33.33%;
+	}
+	.head2{
+		width: 33.33%;
+	}
+	.head3{
+		display: inline-block;
+		width: 33.33%;
+	}
+}
+@media (min-width: 992px){
+	.head1{
+		width: 25%;
+	}
+	.head2{
+		width: 25%;
+	}
+	.head3{
+		width: 25%;
+	}
+	.head4{
+		display: inline-block;
+		width: 25%;
+	}
+}
+@media (min-width: 1200px){
+	.head1{
+		width: 16.6666%;
+	}
+	.head2{
+		width: 16.6666%;
+	}
+	.head3{
+		width: 16.6666%;
+	}
+	.head4{
+		width: 16.6666%;
+	}
+	.head5{
+		display: inline-block;
+		width: 16.6666%;
+	}
+	.head6{
+		display: inline-block;
+		width: 16.6666%;
+	}
+}
+#content{
+	border-top: 10px solid #8e1739;
+	position: relative;
+	background: #fff;
+}
